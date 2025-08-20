@@ -1,0 +1,167 @@
+/* src/app/App.css */
+
+/* =================================== */
+/*      1. Global Design System        */
+/* =================================== */
+:root {
+  --primary-color: #03346E;
+  --primary-hover-color: #022a5c;
+  --secondary-color: #6EACDA;
+  --text-color: #021526;
+  --surface-color: #ffffff;
+  --background-color: #f7f7f2;
+  --border-color: #e9e9e0;
+  --accent-color: #E2E2B6;
+  --text-muted-color: #5a646e;
+  --success-color: #28a745;
+  --warning-color: #ffc107;
+  --danger-color: #dc3545;
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* =================================== */
+/*      2. Main App Layout             */
+/* =================================== */
+.app-layout {
+  display: flex;
+  height: 100vh;
+}
+
+/* =================================== */
+/*      3. Sidebar Navigation          */
+/* =================================== */
+.app-sidebar {
+  width: 250px;
+  background-color: var(--surface-color);
+  border-right: 1px solid var(--border-color);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Pushes footer to the bottom */
+  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar-nav a {
+  color: var(--text-muted-color);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 15px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between icon and text */
+}
+
+.sidebar-nav a:hover {
+  background-color: #f0f0e6;
+  color: var(--text-color);
+}
+
+.sidebar-nav a.active {
+  background-color: var(--primary-color);
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(3, 52, 110, 0.4);
+}
+
+.nav-icon {
+  font-size: 20px; /* Makes icons slightly larger */
+}
+
+/* =================================== */
+/*      4. Main Content Area           */
+/* =================================== */
+.app-main-content {
+  flex-grow: 1;
+  padding: 30px 40px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  flex-grow: 1;
+}
+
+/* =================================== */
+/*      5. New Sidebar Logo            */
+/* =================================== */
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--primary-color);
+  padding: 10px 15px;
+  margin-bottom: 40px;
+}
+
+.logo-icon {
+  font-size: 28px;
+}
+
+/* =================================== */
+/*      6. New Page Header             */
+/* =================================== */
+.page-header {
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 28px;
+  color: var(--text-color);
+}
+
+/* =================================== */
+/*      7. New Sidebar Footer          */
+/* =================================== */
+.sidebar-footer {
+  padding-top: 20px;
+  border-top: 1px solid var(--border-color);
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.user-avatar {
+  font-size: 40px;
+  color: var(--secondary-color);
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.user-role {
+  font-size: 12px;
+  color: var(--text-muted-color);
+}

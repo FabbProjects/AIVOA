@@ -1,0 +1,104 @@
+/* =================================== */
+/*      Main Wizard Container          */
+/* =================================== */
+.wizard-container {
+  max-width: 700px;
+  margin: 40px auto; /* Centers the wizard on the page */
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  overflow: hidden; /* Important for border-radius */
+  display: flex;
+  flex-direction: column;
+}
+
+.wizard-header {
+  padding: 25px 30px;
+  text-align: center;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.wizard-header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #343a40;
+}
+
+/* =================================== */
+/*      Progress Bar Styling           */
+/* =================================== */
+.progress-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: #f8f9fa;
+}
+
+.step-indicator {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #e9ecef;
+  color: #adb5bd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition: all 0.4s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.step-indicator.active {
+  background-color: var(--primary-color); /* This will now be #03346E */
+  color: #fff; /* Ensures the number inside is white and readable */
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(3, 52, 110, 0.5);
+}
+.step-indicator.completed {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.step-connector {
+  flex-grow: 1;
+  height: 4px;
+  background-color: #e9ecef;
+  margin: 0 -10px; /* Overlap slightly with indicators */
+  position: relative;
+  z-index: 1;
+}
+
+/* =================================== */
+/*    Step Content & Animations        */
+/* =================================== */
+.wizard-form {
+  padding: 30px 40px;
+}
+
+.step-content-wrapper {
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Animation classes */
+.step-fade-enter {
+  opacity: 0;
+  transform: translateY(15px);
+}
+.step-fade-exit {
+  opacity: 0;
+  transform: translateY(-15px);
+}
+
+
+/* =================================== */
+/*      Navigation Buttons             */
+/* =================================== */
+.wizard-navigation {
+  display: flex;
+  justify-content: flex-end; /* Pushes buttons to the right */
+  padding: 20px 40px;
+  border-top: 1px solid #e9ecef;
+  background-color: #f8f9fa;
+}

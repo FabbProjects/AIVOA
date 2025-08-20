@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QMS Portal - Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- AI Assistant Modal (Hidden by default) -->
+    <div id="ai-assistant" class="ai-assistant-overlay">
+        <div class="ai-assistant-modal">
+            <div class="ai-header">
+                <h3>QMS AI Assistant</h3>
+                <a href="#" class="ai-close-btn">&times;</a>
+            </div>
+            <div class="ai-messages-container">
+                <div class="ai-message ai">
+                    <p>Hello! I am your QMS Assistant. How can I help you today?</p>
+                </div>
+                <div class="ai-message user">
+                    <p>Show high-risk events.</p>
+                </div>
+                <div class="ai-message ai">
+                    <p>Found 1 high-risk events:<br>- ID 1: Critical Power Supply Failure (Severity: Critical, Priority: High)</p>
+                </div>
+            </div>
+            <div class="ai-input-area">
+                <input type="text" placeholder="Ask me anything...">
+            </div>
+        </div>
+    </div>
+
+    <div class="app-layout">
+        <!-- Sidebar Navigation -->
+        <nav class="app-sidebar">
+            <div>
+                <div class="sidebar-logo">QMS Portal</div>
+                <div class="sidebar-nav">
+                    <a href="index.html">Home</a>
+                    <a href="events-list.html" class="active">View Events</a>
+                    <a href="create-event.html">Create Event</a>
+                </div>
+            </div>
+            <div class="user-profile">
+                <div class="user-details">
+                    <span class="user-name">Fabia Stany</span>
+                    <span class="user-role">Administrator</span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="app-main-content">
+            <div class="page-header">
+                <h1>Events Dashboard</h1>
+            </div>
+            <div class="event-list-grid">
+                <!-- Sample Event Card 1 (High-Risk) -->
+                <div class="event-card">
+                    <div class="card-header">
+                        <h3>Critical Power Supply Failure</h3>
+                        <span class="status-badge status-open">Open</span>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Type:</strong> Incident</p>
+                        <p><strong>Initiator:</strong> Admin</p>
+                        <p><strong>Severity:</strong> Critical</p>
+                    </div>
+                    <div class="card-footer">Created on: 2024-10-27</div>
+                </div>
+
+                <!-- Sample Event Card 2 (In-Progress) -->
+                <div class="event-card">
+                    <div class="card-header">
+                        <h3>Q3 Internal Safety Audit</h3>
+                        <span class="status-badge status-in-progress">In Progress</span>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Type:</strong> Audit</p>
+                        <p><strong>Initiator:</strong> Sarah Jenkins</p>
+                        <p><strong>Severity:</strong> Low</p>
+                    </div>
+                    <div class="card-footer">Created on: 2024-10-15</div>
+                </div>
+
+                <!-- Sample Event Card 3 (Closed) -->
+                <div class="event-card">
+                    <div class="card-header">
+                        <h3>Incorrect Component Labeling</h3>
+                        <span class="status-badge status-closed">Closed</span>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Type:</strong> Non-Conformance</p>
+                        <p><strong>Initiator:</strong> David Chen</p>
+                        <p><strong>Severity:</strong> Medium</p>
+                    </div>
+                    <div class="card-footer">Created on: 2024-08-20</div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Floating Action Button for AI -->
+    <a href="#ai-assistant" class="ai-fab">🤖</a>
+
+</body>
+</html>

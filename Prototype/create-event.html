@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QMS Portal - Create Event</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-layout">
+        <!-- Sidebar Navigation -->
+        <nav class="app-sidebar">
+            <div>
+                <div class="sidebar-logo">QMS Portal</div>
+                <div class="sidebar-nav">
+                    <a href="index.html">Home</a>
+                    <a href="events-list.html">View Events</a>
+                    <a href="create-event.html" class="active">Create Event</a>
+                </div>
+            </div>
+            <div class="user-profile">
+                <div class="user-details">
+                    <span class="user-name">Fabia Stany</span>
+                    <span class="user-role">Administrator</span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="app-main-content">
+            <div class="page-header">
+                <h1>Create New Event</h1>
+            </div>
+
+            <div class="wizard-container">
+                <div class="wizard-header">
+                    <h1>Create New QMS Event</h1>
+                </div>
+                <div class="progress-bar-container">
+                    <div class="step-indicator active">1</div>
+                    <div class="step-connector"></div>
+                    <div class="step-indicator">2</div>
+                    <div class="step-connector"></div>
+                    <div class="step-indicator">3</div>
+                </div>
+                <form class="wizard-form">
+                    <div class="form-group">
+                        <label for="eventTitle">Event Title / Subject</label>
+                        <input type="text" id="eventTitle" placeholder="e.g., Annual Production Line Safety Audit">
+                    </div>
+                    <div class="form-group">
+                        <label for="eventType">Event Type</label>
+                        <select id="eventType">
+                            <option>Select a Type...</option>
+                            <option>Audit</option>
+                            <option>Incident</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="initiator">Initiator / Reported By</label>
+                        <input type="text" id="initiator" placeholder="Your Name">
+                    </div>
+                    <div class="wizard-navigation">
+                        <button type="button" class="button">Next</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

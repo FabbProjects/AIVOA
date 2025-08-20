@@ -1,0 +1,26 @@
+.common-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  margin: 5px; /* Add some margin for spacing */
+}
+
+.common-button:hover {
+  background-color: #0056b3;
+}
+
+.common-button:active {
+  transform: scale(0.98);
+}
+
+.common-button:disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+} 
