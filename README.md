@@ -123,3 +123,7 @@ After creating a few sample events, try these prompts:
 *   `What should we do about the power supply failure?` (or `Suggest next steps for event ID 1.`)
 *   `Draft a closure email for the fire extinguisher audit.` (or `Generate a draft notification for event closure 2.`)
 *   `Are there any recent trends related to the IT department?`
+
+A quick demonstration of the QMS application's core features, including event creation and interacting with the AI Assistant.
+
+![QMS Application Demo](assests/QMS.gif)
